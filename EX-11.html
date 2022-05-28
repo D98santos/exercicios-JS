@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX-11</title>
+  </head>
+  <body>
+    <script>
+      let lp = parseFloat(prompt("Largura da parede:"));
+      let ap = parseFloat(prompt("Altura da aparede"));
+      document.write(
+        "Sua parede tem a dimensão de " +
+          lp +
+          "x" +
+          ap +
+          " e sua área é de " +
+          lp * ap +
+          "m²" +
+          "Para pintar essa parede, você precisará de " +
+          ((lp * ap) / 2).toFixed(2) +
+          "l de tinta."
+      );
+    </script>
+  </body>
+</html>

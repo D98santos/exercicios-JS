@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>gsddv</title>
+  </head>
+  <body>
+    Tabuada do número: <input id="num" type="number" /> <br />
+    <button onclick="tabuada()">Exibir</button><br />
+    Tabuada: <br />
+    <div id="resposta" style="display: inline"></div>
+
+    <script type="text/javascript" charset="utf-8">
+      function tabuada() {
+        var num = parseInt(document.getElementById("num").value);
+        var resposta = document.getElementById("resposta");
+        var tabuada = "";
+
+        for (var count = 1; count <= 10; count++)
+          tabuada += num + " x " + count + " = " + num * count + "<br />";
+
+        resposta.innerHTML = tabuada;
+      }
+    </script>
+  </body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="pergunta1" />
+
+    <button>Chutar!</button>
+
+    <script>
+      var pergunta1 = "";
+      var button = document.querySelector("button");
+      button.onclick = function () {
+        pergunta1 = document.querySelector("#pergunta1");
+        alert(pergunta1.value);
+      };
+    </script>
+  </body>
+</html> -->

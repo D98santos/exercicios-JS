@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      let name = prompt("Digite o seu nome:");
+      let arr = name.replace(/\s/g, "");
+      var word_one = name.split(" ")[0]; // separar str por espaços
+      //document.write(arr + "<br>");
+      document.write("Seu nome em maiúsculas é " + name.toUpperCase() + "<br>");
+      document.write("Seu nome em minúsculas é " + name.toLowerCase() + "<br>");
+      document.write("Seu nome tem ao todo " + arr.length + "<br>");
+      document.write(
+        "Seu primeiro nome é " +
+          word_one +
+          " e ele tem " +
+          word_one.length +
+          " letras."
+      );
+    </script>
+  </body>
+</html>

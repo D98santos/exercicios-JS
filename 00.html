@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <input type="number" id="valorA" />
+    <script>
+      function tabuada() {
+        var par = document.querySelector("#demo");
+        var input = parseInt(document.getElementById("valorA").value);
+        console.log(input);
+        var n = input;
+
+        for (i = 0; i <= 10; i++)
+          document.querySelector("#demo").innerHTML += `${i} x ${n} = ${
+            i * n
+          }<br>`;
+      }
+
+      document.querySelector("#valorA").addEventListener("change", (e) => {
+        tabuada();
+      });
+    </script>
+  </body>
+</html>
+<!-- const notas = [(n1 = 5), (n2 = 10)];
+
+      console.log("A primeira nota é :" + notas[0]);
+      console.log("A segunda  nota é :" + notas[1]);
+      console.log(
+        "A media entre elas e: " + (notas[0] + notas[1]) / notas.length 
+      
+      // let aa = [5.5, 2.2, 3.3, 4.4, ]
+      const notas = [5, 10, 4, 1];
+
+      let soma = 0;
+      for (let i = 0; i < notas.length; i++) {
+        console.log(`Nota: ${notas[i]}`);
+
+        soma += notas[i];
+      }
+      console.log(`Média: ${soma / notas.length}`);-->

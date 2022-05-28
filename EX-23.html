@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num = prompt("Informe um número:");
+
+      let u = (num / 1) % 10;
+      let d = (num / 10) % 10;
+      let c = (num / 100) % 10;
+      let m = (num / 1000) % 10;
+
+      document.write("Analisando o número: " + num + "<br>");
+      document.write("Unidade: " + parseInt(u) + "<br>");
+      document.write("Dezena: " + parseInt(d) + "<br>");
+      document.write("Centena: " + parseInt(c) + "<br>");
+      document.write("Milhar: " + parseInt(m));
+    </script>
+  </body>
+</html>

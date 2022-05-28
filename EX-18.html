@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let angulo = parseFloat(prompt("digite o ângulo que você deseja:"));
+      let seno = Math.sin((angulo * 3.14) / 180).toFixed(2);
+      document.write("Ângulo de " + angulo + "° tem seno  de " + seno + "<br>");
+
+      let cosseno = Math.cos((angulo * 3.14) / 180).toFixed(2);
+      document.write(
+        "Ângulo de " + angulo + "° tem cosseno  de " + cosseno + "<br>"
+      );
+
+      let tangente = Math.tan((angulo * 3.14) / 180).toFixed(2);
+      document.write(
+        "Ângulo de " + angulo + "° tem tangente  de " + tangente + "<br>"
+      );
+    </script>
+  </body>
+</html>

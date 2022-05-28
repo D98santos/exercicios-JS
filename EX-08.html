@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX-08</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      let meters = parseFloat(prompt("Uma distância em metros:"));
+      document.querySelector("#demo").innerHTML =
+        "A medida de " +
+        meters.toFixed(1) +
+        "m corresponde a: <br>" +
+        meters / 1000 +
+        "km <br>" +
+        meters / 100 +
+        "hm <br>" +
+        meters / 10 +
+        "dam <br>" +
+        meters * 10 +
+        "dm <br>" +
+        meters * 100 +
+        "cm <br>" +
+        meters * 1000 +
+        "mm <br>";
+    </script>
+  </body>
+</html>
